@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="숫자1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="숫자2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/plusbutton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:text="더하기"
+        android:background="#B3B0B0"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/minusbutton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="빼기"
+        android:layout_marginTop="20dp"
+        android:background="#B3B0B0"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/multiplybutton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="곱하기"
+        android:layout_marginTop="20dp"
+        android:background="#B3B0B0"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/dividebutton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="나누기"
+        android:layout_marginTop="20dp"
+        android:background="#B3B0B0"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp"
+            android:text="계산 결과: "/>
+
+        <TextView
+            android:id="@+id/resultTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
